@@ -1,11 +1,12 @@
 const mariadb = require('mariadb');
 const options = require('./config');
+const cors = require('cors');
 const pool = mariadb.createPool(options);
 
 const express = require('express');
 const app = express();
-app.use(express.static('./public'));
 
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded());
 

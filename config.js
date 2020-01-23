@@ -1,7 +1,7 @@
 module.exports = {
-	host: '127.0.0.1',
+	host: '172.17.0.4',
 	user:'root',
 	password: 'root',
 	database: 'feedback',
-	port: "3307"
+	port: "3306"
 };
