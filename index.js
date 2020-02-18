@@ -1,7 +1,7 @@
-const mariadb = require('mariadb');
+const mysqldb = require('mysql');
 const options = require('./config');
 const cors = require('cors');
-const pool = mariadb.createPool(options);
+const pool = mysqldb.createPool(options);
 
 const express = require('express');
 const app = express();
